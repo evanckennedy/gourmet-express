@@ -111,12 +111,12 @@ nav ul li {
 
   h2 {
     font-size: 5rem;
-    color: var(--light-grey);
+    color: var(--white);
   }
 
   p {
     font-size: 2rem;
-    color: var(--light-grey);
+    color: var(--white);
   }
 
   button {
@@ -131,6 +131,25 @@ nav ul li {
     color: black;
   }
 
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Section Heading                                      */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.section-heading {
+  padding: 80px 0 20px;
+  text-align: center;
+}
+
+.section-intro {
+  text-transform: uppercase;
+  color: var(--dark-gold);
+  font-weight: 600;
+}
+
+.section-name {
+  font-size: 4rem;
+  font-weight: 700;
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Map                                                  */
