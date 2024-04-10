@@ -128,7 +128,7 @@ nav ul li {
 
   button:hover {
     background-color: var(--light-gold);
-    color: black;
+    color: var(--intellectual-grey);
   }
 
 }
@@ -213,47 +213,30 @@ nav ul li {
   transform: scale(1.5); 
 }
 
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.column {
-  flex: 0 0 calc(25% - 1.5rem);
-  max-width: calc(25% - 1.5rem);
-  height: 200px;
-  border-radius: 6px;
-  background-color: 1px 1px 2px 1px rgb(0 0 0 / 0.03);
-}
-
-.one { background-color: #53add4; }
-.two { background-color: #d47783; }
-.three { background-color: #53d47a; }
-.four { background-color: #7a53d5; }
-
-@media (max-width: 768px) {
-  .column {
-    flex: 0 0 calc(50% - 1rem);
-    max-width: calc(50% - 1rem);
-  }
-}
-
-@media (max-width: 480px) {
-  .column {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
- */
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Map                                                  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.map-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.track-button {
+  width: 10rem;
+  padding: .6rem;
+  border: 2px solid var(--dark-gold);
+  background-color: var(--dark-gold);
+  color: var(--light-grey);
+}
+
+.track-button:hover {
+  background-color: transparent;
+  color: var(--intellectual-grey);
+}
+
 #map {
-  margin-top: 50px;
   width: 100%;
-  height: 40rem;
+  height: 45rem;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
