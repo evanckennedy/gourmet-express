@@ -14,6 +14,10 @@
   place-items: center;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 .gap-1 {
   gap: 1rem;
 }
@@ -27,11 +31,16 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 :root {
-  --app-background-dark: rgb(24, 23, 32);
+  --app-background-dark: #000;
+  --white: #fff;
+  --dark-gold: #8e793e;
+  --light-gold: #ad974f;
+  --intellectual-grey: #231f20;
+  --light-grey: #eaeaea;
 }
 
 body {
-  background-color: var(--app-background-dark);
+  background-color: var(--white);
   font-family: 'Noto Sans', 'Open Sans', arial, sans-serif;
 }
 
@@ -40,12 +49,36 @@ body {
   margin-inline: auto;
 }
 
-h1, h2, p {
-  color: #fff;
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Header                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+header {
+  height: 6rem;
 }
 
+header > div {
+  align-items: center;
+}
+
+figure img {
+  line-height: 6rem;
+  height: 4rem;
+}
+
+nav ul li {
+  line-height: 6rem;
+  list-style: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--intellectual-grey);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out;
+}
+
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*  Component                                            */
+/*  Map                                                  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 #map {
   margin-top: 50px;
