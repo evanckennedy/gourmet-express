@@ -154,12 +154,71 @@ nav ul li {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  About                                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#about {
+  padding-bottom: 80px;
+}
+
+.about-container {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.about-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.25s ease-in-out;
+}
+
+.about-image img:hover {
+  transform: scale(1.1);
+}
+
+.about-content {
+  flex: 1;
+  flex-direction: column;
+
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+.about-content p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.read-more {
+  display: inline-block;
+  width: 10rem;
+  padding: .6rem;
+  border: 2px solid var(--dark-gold);
+  background-color: var(--dark-gold);
+  color: var(--light-grey);
+}
+
+.read-more:hover {
+  background-color: transparent;
+  color: var(--dark-gold);
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  How it Works                                         */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 #how-it-works {
   background-color: var(--light-grey);
+  padding-bottom: 80px;
 }
-
 
 .steps-container {
   flex-wrap: wrap;
@@ -216,6 +275,10 @@ nav ul li {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Map                                                  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#track {
+  padding-bottom: 80px;
+}
+
 .map-container {
   flex-direction: column;
   align-items: center;
@@ -259,6 +322,7 @@ footer p {
   font-weight: 600;
   color: var(--light-grey);
 }
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Media Queries                                        */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -266,6 +330,10 @@ footer p {
   .card {
     flex: 0 0 calc(50% - 1rem);
     max-width: calc(50% - 1rem);
+  }
+
+  .about-container {
+    flex-direction: column;
   }
 }
 
