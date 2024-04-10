@@ -72,13 +72,13 @@ figure img {
   height: 4rem;
 }
 
-nav ul li {
+nav ul li a, nav ul li {
   line-height: 6rem;
   list-style: none;
+  text-decoration: none;
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--intellectual-grey);
-  text-decoration: none;
   cursor: pointer;
   transition: color 0.25s ease-in-out;
 }
@@ -125,6 +125,12 @@ nav ul li {
     background-color: transparent;
     color: var(--light-gold);
     padding: .6rem 1.3rem;
+  }
+
+  button a {
+    list-style: none;
+  text-decoration: none;
+  color: inherit;
   }
 
   button:hover {
