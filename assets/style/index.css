@@ -60,6 +60,7 @@ button {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 header {
   height: 6rem;
+  background-color: var(--light-grey);
 }
 
 header > div {
