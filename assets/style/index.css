@@ -304,7 +304,7 @@ nav ul li a, nav ul li {
   padding: .6rem;
   border: 2px solid var(--dark-gold);
   background-color: var(--dark-gold);
-  color: var(--light-grey);
+  color: var(--white);
 }
 
 .track-button:hover {
