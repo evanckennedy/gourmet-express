@@ -129,15 +129,14 @@ nav ul li a, nav ul li {
 
   button a {
     list-style: none;
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
   }
 
   button:hover {
     background-color: var(--light-gold);
     color: var(--intellectual-grey);
   }
-
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -150,8 +149,9 @@ nav ul li a, nav ul li {
 
 .section-intro {
   text-transform: uppercase;
-  color: var(--dark-gold);
+  color: var(--light-gold);
   font-weight: 600;
+  font-size: 1.8rem;
 }
 
 .section-name {
@@ -193,7 +193,6 @@ nav ul li a, nav ul li {
 .about-content {
   flex: 1;
   flex-direction: column;
-
 }
 
 .about-content h3 {
@@ -219,6 +218,7 @@ nav ul li a, nav ul li {
   background-color: transparent;
   color: var(--dark-gold);
 }
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  How it Works                                         */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -236,11 +236,11 @@ nav ul li a, nav ul li {
   max-width: calc(25% - 1.5rem);
   height: 20rem;
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: var(--white);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #0f0f15;
+  color: var(--intellectual-grey);
   cursor: pointer;
   border-radius: 6px;
   box-shadow: 0 0 3px rgb(255 255 255 / 0.15);
@@ -248,7 +248,7 @@ nav ul li a, nav ul li {
 
 .card-icon {
   font-size: 3.8rem;
-  background: var(--light-gold);
+  background: var(--dark-gold);
   width: 8rem;
   height: 8rem;
   text-align: center;
@@ -259,11 +259,12 @@ nav ul li a, nav ul li {
 
 .card p {
   margin-top: 1.5rem;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
   max-height: 0;
   opacity: 0;
   transition: 0.25s ease-in-out;
+  color: var(--intellectual-grey);
 }
 
 /* targets p when card is hovered over */
@@ -275,7 +276,7 @@ nav ul li a, nav ul li {
 /* targets icon when card is hovered over */
 .card:hover .card-icon {
   background: none;
-  color: var(--light-gold);
+  color: var(--dark-gold);
   transform: scale(1.5); 
 }
 
