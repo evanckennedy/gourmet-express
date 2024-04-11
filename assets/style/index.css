@@ -201,7 +201,9 @@ nav ul li a, nav ul li {
 }
 
 .about-content h3 {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--dark-gold);
   line-height: 1;
 }
 
