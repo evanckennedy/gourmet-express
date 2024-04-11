@@ -31,9 +31,9 @@ map.addControl(new mapboxgl.GeolocateControl({
 // Marker
 function addMarker(location) {
   let marker = new mapboxgl.Marker({
-    color: "#860D0D",
-    width: '10px',
-    height: '10px',
+    color: "var(--medium-gold)",
+    width: '1rem',
+    height: '1rem',
     draggable: true
     }).setLngLat(location)
     .addTo(map);
@@ -53,7 +53,7 @@ function getGeolocation() {
 function getLocation(position) {
   let { latitude, longitude } = position.coords;
   let userLocation = [longitude, latitude];
-  map.flyTo({ center: userLocation, zoom: 10 });
+  map.flyTo({ center: userLocation, zoom: 16 });
   addMarker(userLocation);
 }
 
