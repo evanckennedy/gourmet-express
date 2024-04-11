@@ -7,7 +7,9 @@ import { select, listen, } from './utils.js';
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Selectors                                            */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-const trackButton = select('.track-button')
+const trackButton = select('.track-button');
+const mapDiv = select('#map');
+const textOverlay = select('.no-map-text')
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Mapbox                                               */
@@ -64,4 +66,16 @@ function errorHandler() {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Event Listeners                                      */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-listen('click', trackButton, getGeolocation);
+function removeMapOverlay() {
+  textOverlay.classList.add('display-none');
+  mapDiv.classList.remove('display-none');
+  map.resize(); // forces map to recalibrate size and re-render itself
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Event Listeners                                      */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+listen('click', trackButton, () => {
+  getGeolocation();
+  removeMapOverlay();
+});

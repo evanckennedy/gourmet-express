@@ -26,6 +26,10 @@
   gap: 2rem;
 }
 
+.display-none {
+  display: none;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Base                                                 */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -306,12 +310,26 @@ nav ul li a, nav ul li {
   color: var(--dark-gold);
 }
 
-#map {
+.map-wrapper {
   width: 100%;
   height: 45rem;
+  background-color: var(--light-grey);
+  position: relative;
 }
 
-/* <p>Click on the track button to enable the map</p> */
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.no-map-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--intellectual-grey);
+  font-size: 2.2rem;
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Footer                                               */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
