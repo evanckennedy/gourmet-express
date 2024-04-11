@@ -34,6 +34,7 @@
   --app-background-dark: #000;
   --white: #fff;
   --dark-gold: #8e793e;
+  --medium-gold: #d6b728;
   --light-gold: #ffd700;
   --intellectual-grey: #231f20;
   --light-grey: #eaeaea;
@@ -149,7 +150,7 @@ nav ul li a, nav ul li {
 
 .section-intro {
   text-transform: uppercase;
-  color: var(--light-gold);
+  color: var(--medium-gold);
   font-weight: 600;
   font-size: 1.8rem;
 }
@@ -310,6 +311,7 @@ nav ul li a, nav ul li {
   height: 45rem;
 }
 
+/* <p>Click on the track button to enable the map</p> */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Footer                                               */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
