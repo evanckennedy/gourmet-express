@@ -14,7 +14,7 @@ const textOverlay = select('.no-map-text')
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Mapbox                                               */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-mapboxgl.accessToken = 'pk.eyJ1IjoiY2FtYmpqIiwiYSI6ImNsdXN5dDgyczBteHAyanA0a2thd3hxZHEifQ.BjLGCobl62MQZTu6b3ve2A';
+mapboxgl.accessToken = 'pk.eyJ1IjoiZXZhbjIwMjQiLCJhIjoiY2x1dW82Nmx1MGJ4MDJsbXA2cXl4MmtraCJ9.iBz6mImvl8OlBFIHvpLZ7g';
 const map = new mapboxgl.Map({
   container: 'map', // container ID
   style: 'mapbox://styles/mapbox/streets-v12', // style URL
